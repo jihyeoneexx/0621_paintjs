@@ -32,7 +32,7 @@ function startPainting(){
 function onMouseMove(event){
     const x = event.offsetX; 
     const y = event.offsetY;
-    if(!painting){ 
+    if(painting === false){ 
         ctx.beginPath(); 
         ctx.moveTo(x,y);
     } else{ 
